@@ -1,0 +1,20 @@
+<head>
+    <link rel="shortcut icon" href="favicon.ico" />
+</head>
+<div class="row">
+    <div class="col-md-5">
+        <span class="hipster img-fluid rounded"></span>
+    </div>
+    <div class="col-md-5">
+        <h5>
+            <p>
+            <input type="text" [(ngModel)]="inputContent">
+            </p>
+            <p>
+            <button (click)="addContent(inputContent)">Añadir contenido</button>
+            </p>
+                <li *ngFor="let elem of elems">{{elem}}</li>
+        </h5>
+    </div>
+</div>
+
